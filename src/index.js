@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import JobBoard from './components/JobBoard'
+import GithubJobs from './components/GithubJobs'
 
 const App = () => {
   return (
-    <JobBoard />
+    <GithubJobs />
   )
 }
 

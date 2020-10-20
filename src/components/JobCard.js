@@ -1,20 +1,19 @@
 import React from 'react';
 import JobInfo from './JobInfo';
-import './jobcard.css';
 
-const JobCard = (props) => {
+const JobCard = ({image, name, title, type, location, created}) => {
   return (
     <div className='job-card'>
-      <img src={`${props.image}`} alt='company'/>
-      <div>
-        <p>{props.companyName}</p>
-        <p>{props.jobTitle}</p>
-        <JobInfo
-          type={props.type}
-          location={props.location}
-          posted={props.created_at}
-        />
+      <img src={`${image}`} alt='company'/>
+      <div className='job-info'>
+        <p>{name}</p>
+        <p>{title}</p>
+        <p>{type}</p>
       </div>
+      <JobInfo
+        location={location}
+        created={created}
+      />
     </div>
   )
 }

@@ -2,10 +2,9 @@ import React from 'react';
 
 const JobInfo = (props) => {
   return (
-    <div>
-      <p>{props.type}</p>
+    <div className='job-description'>
       <p>{props.location}</p>
-      <p>{props.created_at}</p>
+      <p>{props.created}</p>
     </div>
   )
 }
